@@ -12,11 +12,15 @@ class _homeState extends State<home>{
       ListView(
         scrollDirection:Axis.vertical,
         children:[
-          //main
+          //about
           Container(
-            height: 200,
+            constraints: const BoxConstraints(minHeight: 400),
             width: double.maxFinite,
-            color: Colors.red,
+            decoration: const BoxDecoration(
+              image: DecorationImage(image: AssetImage('assets/images/about_bg.jpeg'),
+              fit:BoxFit.cover,
+              )
+            ),
           ),
 
            //experience

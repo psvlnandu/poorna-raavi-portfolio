@@ -18,11 +18,11 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  fonts:
-    - family: Advercase
-      fonts:
-        - asset: fonts/AdvercaseFont-Demo-Bold
-          style: bold
-        - asset: fonts/AdvercaseFont-Demo-Regular
-          style: Regular
+fonts:
+  - family: Advercase
+    fonts:
+      - asset: assets/fonts/AdvercaseFont-Demo-Bold.otf
+        style: bold
+      - asset: assets/fonts/AdvercaseFont-Demo-Regular.otf
+        style: Regular
     
