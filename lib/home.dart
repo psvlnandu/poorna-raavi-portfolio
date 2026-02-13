@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
-class home extends StatefulWidget{
-  const home({super.key});
+class Home extends StatefulWidget {
+  const Home({super.key});
+
   @override
-  State<home> createState() => _homeState();
+  State<Home> createState() => _HomeState();
 }
-class _homeState extends State<home>{
+
+class _HomeState extends State<Home> {
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: 
@@ -17,7 +20,7 @@ class _homeState extends State<home>{
             constraints: const BoxConstraints(minHeight: 400),
             width: double.maxFinite,
             decoration: const BoxDecoration(
-              image: DecorationImage(image: AssetImage('assets/images/about_bg.jpeg'),
+              image: DecorationImage(image: AssetImage('assets/images/about_bg01.jpeg'),
               fit:BoxFit.cover,
               )
             ),
