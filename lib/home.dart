@@ -24,6 +24,28 @@ class _HomeState extends State<Home> {
               repeat: ImageRepeat.repeat,
               )
             ),
+            child: Padding(padding: const EdgeInsets.symmetric(horizontal: 100.0, vertical: 60.0),
+            child: IntrinsicHeight(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                  "About me",
+                    style: TextStyle(
+                      fontSize: 64,
+                      fontFamily: 'Advercase',
+                    ),
+                  ),
+                  const SizedBox(height: 30),
+                  const Text(
+                    "I'm Casey — an interior stylist passionate about designing homes...",
+                    style: TextStyle(fontSize: 18, height: 1.5),
+                  ),
+                  const Spacer(),
+                ],
+              )
+              ),
+            )
           ),
 
            //experience
