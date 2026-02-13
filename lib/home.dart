@@ -21,22 +21,30 @@ class _HomeState extends State<Home> {
             width: double.maxFinite,
             decoration: const BoxDecoration(
               image: DecorationImage(image: AssetImage('assets/images/about_bg01.jpeg'),
-              fit:BoxFit.cover,
+              repeat: ImageRepeat.repeat,
               )
             ),
           ),
 
            //experience
           Container(
-            height: 200,
+            constraints: const BoxConstraints(minHeight: 400),
             width: double.maxFinite,
-            color: Colors.blue,
+            decoration: const BoxDecoration(
+              image: DecorationImage(image: AssetImage('assets/images/pink_red_stripes.jpeg'),
+              repeat: ImageRepeat.repeat,
+              )
+            ),
           ),
 
           Container(
-            height: 200,
+           constraints: const BoxConstraints(minHeight: 400),
             width: double.maxFinite,
-            color: Colors.green,
+            decoration: const BoxDecoration(
+              image: DecorationImage(image: AssetImage('assets/images/red_hearts_grid.jpeg'),
+              repeat: ImageRepeat.repeat,
+              )
+            ),
           ),
         ]
       )
