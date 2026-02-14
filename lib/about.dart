@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widget_previews.dart';
+import 'package:poorna_raavi/assets/constants/constants.dart';
 
 
 class about extends StatelessWidget {
@@ -22,14 +23,10 @@ class about extends StatelessWidget {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
-                      "About me",
-                        style: TextStyle(
-                          fontSize: 64,
-                      Expanded( // This Expanded widget will contain your text content
-                        flex: 3, // Adjust flex to control width ratio with the image
-                        child: Column( // Use a Column to stack the two Text widgets vertically
-                          crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
+                      Expanded( 
+                        flex: 3, 
+                        child: Column( 
+                          crossAxisAlignment: CrossAxisAlignment.start, 
                           children: [
                             const Text(
                             "About me",
@@ -37,37 +34,34 @@ class about extends StatelessWidget {
                                 fontSize: 64,
                               ),
                             ),
-                            const SizedBox(height: 30), // Vertical spacing between the two text elements
+                            const SizedBox(height: 30), 
                             
                             const Text(
-                              "I'm Casey — an interior stylist passionate about designing homes...",
+                              constants.Texts.aboutDescription, // Replaced with constant
                               style: TextStyle(fontSize: 18, height: 1.5),
                             ),
                           ],
                         ),
                       ),
-                      const SizedBox(height: 30),
-                      
-                      const Text(
-                        "I'm Casey — an interior stylist passionate about designing homes...",
-                        style: TextStyle(fontSize: 18, height: 1.5),
-                      ),
-                      const Spacer(),
-                      // const SizedBox(width: 50),
-                      const SizedBox(width: 50), // Horizontal spacing between the text column and the image
+                      const SizedBox(width: 50), 
                       Expanded(
                         flex: 2,
-                        flex: 2, // Adjust flex to control width ratio with the text
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
-                            border: Border.all(color: Colors.white, width: 4),
+                            border: Border.all(color: Colors.white, width: 9),
                             image: const DecorationImage(
-                              image: AssetImage('assets/images/pink_red_stripes.jpeg'),
-                              image: AssetImage('assets/images/profile.jpg'), // Assuming 'profile.jpg' is your profile image
+                              image: AssetImage('assets/images/pink_red_stripes.jpeg'), 
                               fit: BoxFit.cover,
                             ),
                           ),
+                          // child: ClipRRect( 
+                          //   borderRadius: BorderRadius.circular(20),
+                          //   child: Image.asset( 
+                          //     'assets/images/profile.jpeg',
+                          //     fit: BoxFit.cover,
+                          //   ),
+                          // ),
                         ),
                       ),
                     ],
