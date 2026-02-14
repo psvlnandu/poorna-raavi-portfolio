@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:poorna_raavi/About.dart';
 import 'package:poorna_raavi/Ed.dart';
 import 'package:poorna_raavi/Experience.dart';
+import 'package:poorna_raavi/Socials.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -18,6 +19,10 @@ class _HomeState extends State<Home> {
       ListView(
         scrollDirection:Axis.vertical,
         children:[
+          Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 80,vertical: 10),
+              child: Socials(), 
+          ),
           Padding(
               padding: const EdgeInsets.symmetric(horizontal: 80,vertical: 10),
               child: About(), 

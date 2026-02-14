@@ -12,5 +12,6 @@ class Texts{
   static const String aboutTitle = "About me";
   static const String aboutDescription = '''
     I'm Poorna — an developer working sports for United States Winter 
-    Olympics ''';
+    Olympics am a software developer based in Upstate NY, passionate about building intelligent worlds by bridging the gap between robust software engineering and immersive AI/VR experiences. 
+    My expertise spans from creating cloud pipelines and fine-tuning AI models to contributing to published research ''';
 }
