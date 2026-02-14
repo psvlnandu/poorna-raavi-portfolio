@@ -23,7 +23,7 @@ flutter:
     - family: Advercase
       fonts:
         - asset: assets/fonts/AdvercaseFont-Demo-Bold.otf
-          style: bold
-        - asset: assets/fonts/AdvercaseFont-Demo-Regular.otf
-          style: Regular
+    
+        # - asset: assets/fonts/AdvercaseFont-Demo-Regular.otf
+        #   style: Regular
     
