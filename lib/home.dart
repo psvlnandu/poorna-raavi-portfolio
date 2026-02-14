@@ -37,11 +37,26 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   const SizedBox(height: 30),
+                  
                   const Text(
                     "I'm Casey — an interior stylist passionate about designing homes...",
                     style: TextStyle(fontSize: 18, height: 1.5),
                   ),
                   const Spacer(),
+                  const SizedBox(width: 50),
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(color: Colors.black, width: 2),
+                        image: const DecorationImage(
+                          image: AssetImage('assets/profile.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               )
               ),
