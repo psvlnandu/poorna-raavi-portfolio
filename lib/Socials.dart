@@ -12,21 +12,15 @@ class Socials extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      constraints: const BoxConstraints(minHeight: 120),
-      width: double.maxFinite,
-      decoration: const BoxDecoration(
-        image: DecorationImage(image: AssetImage('assets/images/red_grid.jpeg'),
-        repeat: ImageRepeat.repeat,
-        )
-      ),
-
-      child: Center(child: Container(
+    return Center(child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
           decoration: BoxDecoration(
-            
+            image: const DecorationImage(
+                image: AssetImage('assets/images/blue_hearts_grid.jpeg'),
+                repeat: ImageRepeat.repeat,
+              ),    
             borderRadius: BorderRadius.circular(50), 
-            border: Border.all(color: Colors.black12, width: 1),
+            border: Border.all(color: Colors.black12, width: 2),
             boxShadow: [
               BoxShadow(
                 color: Colors.black.withOpacity(0.1),
@@ -49,8 +43,9 @@ class Socials extends StatelessWidget{
               _socialIcon(Icons.cloud_download_outlined, "https://your-resume-link.com"),
             ],
           ),
-      ),)
-    );
+      ),
+      );
+  
   }
   Widget _socialIcon(IconData icon, String url) {
     return IconButton(
