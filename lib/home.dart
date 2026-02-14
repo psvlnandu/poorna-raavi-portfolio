@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:poorna_raavi/about.dart';
+import 'package:poorna_raavi/About.dart';
+import 'package:poorna_raavi/Ed.dart';
+import 'package:poorna_raavi/Experience.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -16,29 +18,23 @@ class _HomeState extends State<Home> {
       ListView(
         scrollDirection:Axis.vertical,
         children:[
-          //about
-          about(),
-          
-           //experience
-          Container(
-            constraints: const BoxConstraints(minHeight: 400),
-            width: double.maxFinite,
-            decoration: const BoxDecoration(
-              image: DecorationImage(image: AssetImage('assets/images/pink_red_stripes.jpeg'),
-              repeat: ImageRepeat.repeat,
-              )
-            ),
+          Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 80,vertical: 10),
+              child: About(), 
           ),
 
-          Container(
-           constraints: const BoxConstraints(minHeight: 400),
-            width: double.maxFinite,
-            decoration: const BoxDecoration(
-              image: DecorationImage(image: AssetImage('assets/images/red_hearts_grid.jpeg'),
-              repeat: ImageRepeat.repeat,
-              )
-            ),
+          Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 80,vertical: 10),
+              child: Experience(), 
           ),
+          Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 80,vertical: 10),
+              child: Ed(), 
+          ),
+
+          
+
+          
         ]
       )
     );

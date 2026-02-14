@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widget_previews.dart';
-import 'package:poorna_raavi/assets/constants/constants.dart';
+import 'package:poorna_raavi/constants/constants.dart';
 
-
-class about extends StatelessWidget {
-  const about({super.key});
+class About extends StatelessWidget {
+  const About({super.key});
     
   @Preview(name: 'My Stateless Component')
   @override
@@ -28,16 +27,17 @@ class about extends StatelessWidget {
                         child: Column( 
                           crossAxisAlignment: CrossAxisAlignment.start, 
                           children: [
-                            const Text(
-                            "About me",
+                            
+                            Text(
+                              Texts.aboutTitle,
                               style: TextStyle(
                                 fontSize: 64,
                               ),
                             ),
                             const SizedBox(height: 30), 
                             
-                            const Text(
-                              constants.Texts.aboutDescription, // Replaced with constant
+                             Text(
+                              Texts.aboutDescription, // Replaced with constant
                               style: TextStyle(fontSize: 18, height: 1.5),
                             ),
                           ],

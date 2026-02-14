@@ -10,5 +10,7 @@ class CustomColors {
 
 class Texts{
   static const String aboutTitle = "About me";
-  static const String aboutDescription = "I'm Casey — an interior stylist passionate about designing homes...";
+  static const String aboutDescription = '''
+    I'm Poorna — an developer working sports for United States Winter 
+    Olympics ''';
 }
