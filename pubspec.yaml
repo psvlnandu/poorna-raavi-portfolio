@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  url_launcher: ^6.3.2
 
 dev_dependencies:
   flutter_test:
@@ -17,3 +18,13 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
+  fonts:
+    - family: Advercase
+      fonts:
+        - asset: assets/fonts/AdvercaseFont-Demo-Bold.otf
+    
+        # - asset: assets/fonts/AdvercaseFont-Demo-Regular.otf
+        #   style: Regular
+    
